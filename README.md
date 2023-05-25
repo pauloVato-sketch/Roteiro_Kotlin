@@ -73,6 +73,7 @@ Suas camadas são Model, View e ViewModel:
 **ViewModel** => Responsável por entregar dados do Model para a camada View e gerenciar as ações do usuário. Além disso, fornece os fluxos de dados (Flows e *streams*) para a View.
 
 ![MVVM](https://journaldev.nyc3.digitaloceanspaces.com/2018/04/android-mvvm-pattern.png)
+
 No MVVM, o ViewModel não mantém referência à View, diferente do Presenter no MVP. Fora isso, a relação Presenter-View é 1 para 1, já a View-ViewModel é 1 para muitos.
 Por ser uma arquitetura baseada em eventos, pode ser aplicada de duas formas principais: Data Binding e RxJava, neste projeto usamos o Data Binding no Kotlin.
 
